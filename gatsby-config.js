@@ -6,6 +6,7 @@ module.exports = {
       summary: `who loves front end dev and creating new sites`,
     },
     description: `Healtht Minds live inside healthy bodies. Hence this blog`,
+    siteUrl: `https://healthu.in/`
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
