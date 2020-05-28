@@ -1,0 +1,6 @@
+@media screen and (max-width: 400px) {
+  .background-image {
+    height: 50%;
+    width: 50%;
+  }
+}

@@ -1,15 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Healthy You!`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Shobhit Singh`,
+      summary: `who loves front end dev and creating new sites`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `Healtht Minds live inside healthy bodies. Hence this blog`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -25,6 +21,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/images`,
+        name: `images`,
       },
     },
     {
@@ -61,8 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Healthy You Blog`,
+        short_name: `HealthyU`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
