@@ -30,8 +30,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <header>
               <h1
                 style={{
-                  marginTop: rhythm(1),
-                  marginBottom: 0,
+                  marginTop: 0,
+                  fontSize: "4rem",
                 }}
               >
                 {post.frontmatter.title}
@@ -46,15 +46,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 {post.frontmatter.date}
               </p>
             </header>
+
+            <Bio />
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
             <hr
               style={{
                 marginBottom: rhythm(1),
               }}
             />
-            <footer>
-              <Bio />
-            </footer>
+            <footer></footer>
           </article>
 
           <nav>

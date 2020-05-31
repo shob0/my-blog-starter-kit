@@ -3,27 +3,28 @@ module.exports = {
     title: `Healthy You!`,
     author: {
       name: `Shobhit Singh`,
-      summary: `who loves front end dev and creating new sites`,
+      summary: ``,
     },
     description: `Healtht Minds live inside healthy bodies. Hence this blog`,
-    siteUrl: `https://healthu.in/`
+    siteUrl: `https://healthu.in/`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
+    // `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/content`,
         name: `blog`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-netlify-functions`,
+    //   options: {
+    //     functionsSrc: `${__dirname}/src/functions`,
+    //     functionsOutput: `${__dirname}/functions`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -71,7 +72,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo_small_icon_only.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

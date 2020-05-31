@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import './header.css';
-import Img from 'gatsby-image';
-import styled from 'styled-components';
+import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import "./header.css"
+import Img from "gatsby-image"
+import styled from "styled-components"
 
 const StyledImg = styled(Img)`
   width: 10%;
-`;
+`
 
 function Header() {
   const logo = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ function Header() {
         }
       }
     }
-  `);
+  `)
 
   return (
     <div>
@@ -27,7 +27,7 @@ function Header() {
         <Link
           to="/"
           className="nav-link title-link"
-          style={{ fontSize: '2rem' }}
+          style={{ fontSize: "2rem" }}
         >
           {/* Heahthy<span style={{ color: 'red' }}>U</span> */}
           <StyledImg
@@ -40,7 +40,7 @@ function Header() {
           <div>
             <div
               style={{
-                paddingTop: '18px',
+                paddingTop: "18px",
               }}
             >
               <button
@@ -48,10 +48,10 @@ function Header() {
                 className="transparent-btn"
                 aria-label="menu-nav-button"
                 onClick={() => {
-                  document.querySelector('.nav-bar').style.display = 'flex';
+                  document.querySelector(".nav-bar").style.display = "flex"
                   document
-                    .querySelector('.close-menu-btn')
-                    .classList.remove('none-display');
+                    .querySelector(".close-menu-btn")
+                    .classList.remove("none-display")
                 }}
               >
                 ☰
@@ -64,12 +64,12 @@ function Header() {
                   className="transparent-btn"
                   aria-label="menu-nav-button"
                   onClick={() => {
-                    document.querySelector('.nav-bar').style.display = 'none';
+                    document.querySelector(".nav-bar").style.display = "none"
                     document
-                      .querySelector('.close-menu-btn')
-                      .classList.add('none-display');
+                      .querySelector(".close-menu-btn")
+                      .classList.add("none-display")
                   }}
-                  style={{ color: 'snow' }}
+                  style={{ color: "snow" }}
                 >
                   X
                 </button>
@@ -101,7 +101,7 @@ function Header() {
         </nav>
       </header>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -25,12 +25,14 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        alignItems: "center",
+        fontSize: "0.8rem",
+        marginBottom: rhythm(2),
       }}
     >
       <Image

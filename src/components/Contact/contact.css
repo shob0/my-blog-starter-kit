@@ -1,11 +1,50 @@
 #contact {
   background-color: #cfa29d;
   display: grid;
-  height: 60vh;
+  height: 80vh;
   padding: 3rem;
   margin-top: 1rem;
   color: snow;
   grid-template-columns: 50% 50%;
+}
+
+#contact.pending {
+  position: relative;
+}
+
+#contact.pending:before {
+  background: white;
+  border-radius: 0.25rem;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+#contact.pending:after {
+  animation: loader 1.5s infinite ease-out;
+  background: radial-gradient(rgba(0, 50, 255, 0), rgba(0, 50, 255, 0.75));
+  border-radius: 50%;
+  content: "";
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  left: calc(50% - 3rem);
+  top: calc(50% - 3rem);
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+    transform: scale(0.001);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
 }
 
 .contact-right-div,
@@ -14,7 +53,7 @@
   font-size: 3vw;
   display: grid;
   height: 100%;
-  grid-template-rows: 17% 17% 17% 30% 5%;
+  grid-template-rows: 17% 17% 17% 30% 19%;
 }
 
 h3 {
@@ -45,10 +84,9 @@ h3 {
   background-color: snow;
   border: 1px solid black;
   border-radius: 0;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   cursor: pointer;
   height: 60px;
-  width: 100px;
   font-family: inherit;
   font-weight: lighter;
   font-size: 26px;
@@ -80,10 +118,19 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
 input,
 textarea {
   margin: 0;
   padding: 0;
+  font-size: initial;
 }
 
 strong {
@@ -93,10 +140,42 @@ strong {
 @media screen and (max-width: 600px) {
   #contact {
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 30% 70%;
     width: 80%;
-    height: 100vh;
+    height: auto;
     padding: 2rem;
     margin: 1rem auto;
   }
+  .contact-right-div,
+  .contact-left-div {
+    display: block;
+  }
+  input {
+    margin-top: 0.6rem;
+  }
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.success,
+.error {
+  border-radius: 0.25rem;
+  display: block;
+  margin: 0.75rem auto 0;
+  max-width: 500px;
+}
+
+.success {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid green;
+  padding: 2rem;
+}
+.error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid red;
+  padding: 1rem;
 }
