@@ -1,8 +1,8 @@
-import React from 'react';
-import './bodyImage.css';
-import { graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
-import styled from 'styled-components';
+import React from "react"
+import "./bodyImage.css"
+import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
+import styled from "styled-components"
 
 const StyledBachgroundSectoin = styled(BackgroundImage)`
   width: 100%;
@@ -10,9 +10,9 @@ const StyledBachgroundSectoin = styled(BackgroundImage)`
   background-repeat: repeat-y;
   background-size: cover;
   height: 100%;
-`;
+`
 
-const TextBox = styled('div')`
+const TextBox = styled("div")`
   background-image: linear-gradient(#ddbbffaa, #ddbbff00);
   height: 100%;
   color: #fff;
@@ -23,9 +23,9 @@ const TextBox = styled('div')`
   justify-content: center;
   align-items: center;
   text-align: center;
-`;
+`
 
-const StyledButton = styled('a')`
+const StyledButton = styled("a")`
   height: 35px;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ const StyledButton = styled('a')`
   width: 100px;
   border-radius: 25px;
   z-index: 1;
-`;
+`
 
 function Image() {
   const { image } = useStaticQuery(graphql`
@@ -52,7 +52,7 @@ function Image() {
         }
       }
     }
-  `);
+  `)
   return (
     <StyledBachgroundSectoin
       Tag="section"
@@ -63,12 +63,12 @@ function Image() {
       <TextBox>
         Discover Healthy <br />
         You
-        <StyledButton type="button" aria-label="read-more" href="/about">
+        <StyledButton type="button" aria-label="read-more" href="/blogs">
           Read More
         </StyledButton>
       </TextBox>
     </StyledBachgroundSectoin>
-  );
+  )
 }
 
-export default Image;
+export default Image
