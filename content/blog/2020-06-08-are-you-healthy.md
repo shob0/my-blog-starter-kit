@@ -15,7 +15,7 @@ Suppose you started workout and eating proper. How will you understand that you 
 
 Whereas above methods are good, they can be deceptive. One can be extremely slim but still lack the proper fitness.
 
-**So what is the parameters?**
+**So what are the parameters?**
 
 To identify your health status, look for the below parameters:
 
@@ -34,12 +34,12 @@ Do you have above qualities? *If Yes, good. If No, You will.*
 
 Now as you know health and fitness are two different things. Fitness is crucial and requires continues practice to maintain the above state of health. So **how can you measure your fitness.** 
 
-Well, There are many concepts of fitness and you can identify which one to focus maximum.
+Well, There are many concepts of fitness and you can decide which one you want to maximize.
 
-However, It's always a better ideal to have a good amount of all of these
+Generally, It's always a better to have a good proportion of all of these.
 
-* **Muscular Endurance:** How much repetitions of an exercise you can perform. Like how many pushups or squats.
-* **Muscular Strength:** How much external weight can be moved in repetitions. Usually measured by bench press or weighted squats
+* **Muscular Endurance:** How many repetitions of an exercise you can perform. Like how many pushups or squats.
+* **Muscular Strength:** How much external weight can be moved in relation to repetitions. Usually measured by bench press or weighted squats.
 * **Cardiorespiratory Endurance:** How long or fast an activity can be performed and its impact on heart rate and oxygen  consumption.
 * **Muscular Power:** How much force can be generated during a given activity.  Its a function of movement over a given frame of time.
 * **Flexibility:** How far a muscle group can be stretched.
