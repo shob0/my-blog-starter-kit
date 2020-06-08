@@ -2,9 +2,21 @@
   scroll-behavior: smooth;
 }
 
+body{
+    background-color: snow
+}
+
 .index {
   display: grid;
   grid-template-columns: 5% 90% 5%;
+}
+
+a {
+    color: orangered;
+}
+
+ul {
+    margin-left: 2rem;
 }
 
 .about-me {

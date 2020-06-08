@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "health-you",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Blog for health and fitness knowledge sharing",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Shobhit Singh <shobhit5@hotmail.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.22.13",
@@ -46,9 +43,11 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://healthu.in",
   "keywords": [
-    "gatsby"
+    "health",
+    "Fitness",
+    "Blog"
   ],
   "main": "n/a",
   "scripts": {

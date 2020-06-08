@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import './blog-post.css'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -12,15 +13,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <div className="index">
+    <div className="index blog-post">
       <Layout location={location} title={siteTitle}>
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(35),
+            textAlign: 'left',
+            fontFamily: 'initial',
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
+          className="article"
         >
           <SEO
             title={post.frontmatter.title}
@@ -65,19 +69,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 justifyContent: `space-between`,
                 listStyle: `none`,
                 padding: 0,
+                margin: 0
               }}
             >
               <li>
                 {previous && (
                   <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
+                    &larr; {previous.frontmatter.title}
                   </Link>
                 )}
               </li>
               <li>
                 {next && (
                   <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
+                    {next.frontmatter.title} &rarr;
                   </Link>
                 )}
               </li>
