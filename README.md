@@ -2,4 +2,4 @@
 
 [Healthy You with me](https://healthu.in)
 
-Developed with Gatsby
+Serverless app developed with Gatsby and netlify CMS. 
