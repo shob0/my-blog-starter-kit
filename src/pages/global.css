@@ -2,8 +2,13 @@
   scroll-behavior: smooth;
 }
 
-body{
-    background-color: snow
+body {
+  background-color: snow;
+  background-image: linear-gradient(#ebf4f5, #b5c6e0);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .index {
@@ -12,11 +17,11 @@ body{
 }
 
 a {
-    color: orangered;
+  color: orangered;
 }
 
 ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .about-me {

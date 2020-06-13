@@ -44,7 +44,7 @@ const StyledButton = styled("a")`
 function Image() {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "kike-vega.jpg" }) {
+      image: file(relativePath: { eq: "jd-mason.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp

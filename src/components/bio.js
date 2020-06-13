@@ -31,6 +31,7 @@ const Bio = () => {
       style={{
         display: `flex`,
         alignItems: "center",
+        justifyContent: "flex-end",
         fontSize: "0.8rem",
         marginBottom: rhythm(2),
       }}
@@ -42,15 +43,13 @@ const Bio = () => {
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
           minWidth: 50,
-          borderRadius: `100%`,
         }}
         imgStyle={{
-          borderRadius: `50%`,
+          borderRadius: `100%`,
         }}
       />
       <p>
         Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
         {/* <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a> */}

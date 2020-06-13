@@ -1,3 +1,6 @@
-.blog-post, h1, h2 {
-color: #1e133f
+.blog-post,
+h1,
+h2 {
+  color: rgb(43, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
