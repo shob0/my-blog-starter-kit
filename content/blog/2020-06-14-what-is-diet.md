@@ -19,7 +19,7 @@ Let's take one thing at a time.
 
 As per the definition, Diet is *the kinds of food that a person, animal, or community habitually eats.* 
 
-So any food items that you eat through a day is said to be your diet. It is not limited to vegetables or fruits. Everything from rice to your sugar rush fix comes under the word diet.
+So any food item that you eat throughout a day is said to be your diet. It is not limited to vegetables or fruits. Everything from rice to your sugar fix comes under the word diet.
 
 ## So why do people say *Are you on a diet?*
 
