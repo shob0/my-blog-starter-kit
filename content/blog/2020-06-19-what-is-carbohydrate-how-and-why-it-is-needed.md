@@ -32,7 +32,7 @@ Human body handles carbs in three ways:
 
 ##### Carbohydrates are also called Saccharides.
 
-One gram of carbohydrate produces 4 calories. 
+> **One gram of carbohydrate produces 4 calories.** 
 
 ## Simple and Complex carbohydrates.
 
@@ -57,7 +57,3 @@ It has gotten too technical right?
 In short all you need to understand is how much calories does a gram of carbohydrate produces. It is 4. It's a good idea to eat complex carbohydrates as they are digested slowly and won't make you feel hungry soon. (Slow release of insulin). Simple carbohydrates are sugar molecules, like candy. Complex carbohydrates are rice, oats, etc.
 
 In the next post, we will explore how body digests carbs. What happens when you eat carbs.
-
-
-
-`<p style="text-align:center; font-size: 20px">Remember You come first</p>`
